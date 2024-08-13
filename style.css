@@ -1,0 +1,390 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Open Sans", system-ui;
+   
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(-20deg, #302d2d 0%, #9bc5c3 100%);
+    border-radius:5px;
+
+}
+.drop i{
+    right:50px;
+    top:8px;
+}
+nav button{
+    left:20px;
+    top:10px;
+    z-index:5;
+}
+.topicon i{
+ margin-left:10px;
+ font-size:16px;
+ padding:8px 10px;
+ border-radius:100px;
+ border:1px solid rgb(0, 0, 0);
+ background-color:white;
+}
+.caro{
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    height:100%;
+}
+.navtogel{
+    top:10px;
+    right:16px;
+    border: 1px solid black;
+    position: absolute;
+   z-index:6;
+   display: none;
+   width: max-content;
+}
+.top{
+    z-index:6;
+}
+.logoimg{
+    top:7px;
+    left: -25px;
+    background-color: white;
+    z-index: 5;
+   
+}
+.carousel-caption{
+    top:100px;
+    z-index:2;
+}
+.carousel-item h1{
+    font-size:90px;
+    text-transform: uppercase; 
+}
+.carousel-item h3{
+    position: relative;
+    font-size:30px;
+    text-transform: lowercase;
+}
+.carousel-item h3::after{
+    content: "";
+    width:100px;
+    height:3px;
+    background-color:rgb(110, 109, 109);
+    position: absolute;
+    top:20px;
+    right:340px;
+}
+.carousel-item h3::before{
+    content: "";
+    width:100px;
+    height:3px;
+    background-color:rgb(110, 109, 109);
+    position: absolute;
+    top:20px;
+    left:340px;  
+}
+.colm a{
+    position: relative;
+    color: black !important;
+}
+.colm a::after{
+    content:":";
+   position:absolute;
+   left: 0;
+}
+.imgsize .col-lg-4{
+  height:300px;
+  overflow: hidden;
+}
+.clickh{
+    margin:0px 60px ;
+    text-align:center;
+    background-color:#DB3838;
+    color: white;
+}
+.clickh1{
+    text-align:center;
+    background-color:#DB3838;
+    color: white;
+    margin:0px 20px
+}
+.men p{
+  width:250px;
+  height:3px;
+  background-color: black;  
+}
+.box6 .clickh{
+margin:0px 140px ;
+}
+.star-rating {
+    display: flex;
+    direction: row-reverse;
+    font-size: 1.5rem;
+    unicode-bidi: bidi-override;
+    color: #dcdcdc;
+}
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ffd700;
+    cursor: pointer;
+}
+.star-rating input:checked ~ label {
+    color: #ffd700;
+}
+.star-rating input:checked ~ label ~ label {
+    color: #dcdcdc;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffd700;
+}
+.foot ul li{
+line-height:30px;
+}
+.carousel-control-next, .carousel-control-prev {
+    width:5%;
+}
+.navmenu li a:hover{
+   border-bottom:2px solid red ;
+   transition:all 0.5s ease;
+}
+
+/*----- */
+.star-rating1 input {
+    display: none;
+}
+.offcanvas{
+    background-color: rgb(0, 0, 0,0.6);
+}
+
+@media (max-width:600px) {
+    .navtogel{
+        display:block;
+    }
+    .top{
+        color: white !important;
+    }
+    .offcanvas-body ul li a{
+        color: white !important;
+        margin-top: 0;
+    }
+    .carousel-item h1{
+        font-size:50px;
+    }
+    .row{
+        --bs-gutter-x:0rem !important;
+    }
+    .carousel-caption h1{
+        font-size: 35px;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        overflow-y:visible;
+      }
+      .box6 .clickh {
+        margin: 1px 82px;
+    }
+      .clickh {
+        margin: 0px 39px;
+    }
+    .Summaryheight {
+        height: 346px !important;
+        background-color: #DCE4E7;
+    }  
+    .item{
+        width:600px !important;
+    }
+    .price{
+        width:500px !important;
+    }
+    .quantity1{
+        width:700px !important;
+    }
+    h4{
+        font-size: 20px;
+        padding-top: 5px;
+    }
+   .cardimg22{
+    margin-left: 35px !important;
+   }
+    p {
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+   .topoff li{
+    border:none !important;
+    
+   }
+    
+    
+    
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height:329px;
+  object-fit: cover;
+}
+ button{
+  border: none;
+  background: transparent;
+}
+.buttonposition{
+    position: relative;
+}
+
+
+/*---Animation ---*/
+
+.clickh{
+    margin:0px 60px ;
+    text-align:center;
+    background-color:#DB3838;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.clickh h4{
+    z-index:5;
+    position:relative;
+}
+.clickh::before{
+content: "";
+position: absolute;
+width:40px;
+height:350px;
+top:-150px;
+left:85px;
+background-image: linear-gradient(to top, #ebebeb 50%, #000000 60%);
+animation:animate 4s linear infinite;
+z-index:0;
+display: none;
+}
+ .clickh::after{
+    content: "";
+    position: absolute;
+    inset:3px;
+    background-color:#DB3838;
+    
+}
+.clickh:hover::before{
+    display: block;
+}
+
+
+
+
+@keyframes  animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/*---------------cart--------------------*/
+
+.table thead{
+    font-size:13px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.quantity-controls input {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    margin: 0 8px;
+}
+.quantity-controls button p:hover{
+  background-color: #000000;
+  color: #dcdcdc;
+}
+.decrement p{
+    padding:0px 10px;
+}
+.Summaryheight{
+    height:800px;
+    background-color: #DCE4E7;
+}
+.item{
+    width:45%;
+}
+.price{
+    width:10%;
+}
+.quantity1{
+    width:20%;
+}
+.total{
+    width:100px !important;
+}
+
+/*----------form------------*/
+
+.text1 h3{
+    font-size:15px;
+}
+.form-control::placeholder {
+    text-transform: capitalize;
+}
+textarea{
+    height:180px;
+}
+
+.contucttable.table>:not(caption)>*>* {
+    padding: .0rem .0rem;
+}
+
+.no-bottom-border td, .no-bottom-border th {
+    border-bottom: none;
+ }
+
+ /*------------form valitation--------------*/
+.error input {
+    border:2px solid red;
+}
+.success1 input {
+    border:2px solid rgb(3, 141, 44);
+}
+.forms span{
+    visibility:hidden;
+    font-size: 14px;
+    margin-top:10px;
+}
+.error span{
+    color: red;
+    visibility:visible;
+    
+}
+
+
+

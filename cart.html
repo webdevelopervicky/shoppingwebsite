@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--java script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>cart</title>
+</head>
+
+<body style="font-family:Fira Sans, sans-serif;
+font-weight: 500;">
+    <div class="container-fluid g-0">
+        <!--first offer-->
+
+        <button class="navbar-toggler navtogel" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1">
+            <i class="bi bi-list text-dark" style="font-size:55px"></i>
+        </button>
+        <header>
+            <nav class="navbar g-0 pb-0 pt-0 navbar-expand-md ps-5 pe-3 border-bottom position-relative top">
+
+                <button class="navbar-toggler position-absolute offer1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#demo">
+                    <i class="bi bi-cart-fill me-1"></i>
+                    <p><b>offers</b></p>
+                </button>
+
+                <div class="offcanvas offcanvas-top" id="demo">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Offers</h1>
+                        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <div class="offcanvas-body text-uppercase fw-bold py-0 topoff">
+                        <ul class="navbar-nav py-0 pt-0" style="--bs-nav-link-padding-y: 0rem;">
+                            <li class="nav-item px-lg-5"><a href="" class="nav-link ms-lg-5 ms-1">
+                                    <p class="mt-3"><i class="bi bi-cart-fill me-1"></i>Free shipping ON all order</p>
+                                </a></li>
+                            <li class="nav-item px-lg-5 border-end border-start "><a href="" class="nav-link">
+                                    <p class="mt-3"><i class="bi bi-cash-stack me-1"></i>100% MONEY BACK GUARANTEE</p>
+                                </a></li>
+                            <li class="nav-item ps-lg-3"><a href="" class="nav-link ms-lg-5 ms-1">
+                                    <p class="mt-3"><i class="bi bi-clock-fill me-1"></i>ONLINE SUPPORT 24/7</p>
+                                </a></li>
+                        </ul>
+    
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--logo section-->
+        <div class="row justify-content-center ms-lg-5 ps-lg-3  position-relative">
+            <div class="col-lg-2 col-5 ms-lg-5 ms-1 position-relative">
+                <div class="logoimg position-absolute p-3 px-5 pb-4">
+                    <img src="image/logo1.png" width="150px" height="80px" class="" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-10 mt-5 mt-lg-0 pt-5 pt-lg-0">
+                <div class="mt-lg-3 mt-3 ms-lg-2 pt-3 px-lg-3">
+                    <div class="input-group drop">
+                        <input type="search" class="form-control p-2" Placeholder="search">
+                        <select class="form-select">
+                            <option class="mt-5" selected>All Catogery</option>
+                            <option value="1">Catogory One</option>
+                            <option value="2">Catogory Two</option>
+                            <option value="3">Catogory Three</option>
+                            <option value="4">Catogory four</option>
+                            <option value="5">Catogory five</option>
+                            <option value="6">Catogory six</option>
+                        </select>
+                        <span class="input-group-text bg-danger p-3 px-4"><i
+                                class="bi bi-search text-light fw-bold"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-10 mt-lg-5 mt-4 ps-4 ms-5 ms-lg-2">
+                <div class=" topicon">
+                    <i class="bi bi-facebook rounded-circle"></i>
+                    <i class="bi bi-twitter rounded-circle"></i>
+                    <i class="bi bi-instagram rounded-circle"></i>
+                    <i class="bi bi-youtube rounded-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--navbar-->
+        <nav class="navbar navbar-expand-md bg-dark mt-3 ps-5 py-0 pe-3">
+            <div class="offcanvas offcanvas-end" id="demo1">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title"></h1>
+                    <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="d-flex justify-content-center d-md-none">
+                    <div class=""><img src="image/logo1.png" alt=""></div>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-uppercase p-0 navmenu">
+                        <li class="nav-item">
+                            <a href="index.html"
+                                class="nav-link ms-lg-5 ms-1 text-light py-4">Home</a>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link ms-lg-5 ms-1 text-light py-4">Shop</a></li>
+                        <li class="nav-item"><a href="" class="nav-link ms-lg-5 ms-1 text-light py-4">Features </a></li>
+                        <li class="nav-item"><a href="" class="nav-link py-4  ms-lg-5 ms-1 text-light">mega
+                                group </a></li>
+                        <li class="nav-item"><a href="" class="nav-link ms-lg-5 ms-1 text-light py-4">About</a></li>
+                        <li class="nav-item"><a href="" class="nav-link ms-lg-5 ms-1 text-light py-4">Blog</a></li>
+                        <li class="nav-item"><a href="" class="nav-link ms-lg-5 ms-1 text-light py-4">Contact</a></li>
+                        <li class="nav-item  ms-4"><a href="" class="nav-link ms-lg-5 p-4 ms-1 text-light bg-danger"><i
+                                    class="bi bi-cart-fill me-1 py-4"></i>Shopping Cart (0)</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!----------------- cart list-------------------------------->
+
+    <div class="container-fluid mx-lg-0 px-lg-5 g-0 pb-2 border-bottom"style="#F4F6F5">
+        <div class="row g-0 mx-lg-5">
+            <div class="col-lg-8 col-12 mt-5 cartfirstcolum">
+                <div class="row g-0 px-2 px-lg-0 mb-3 mb-lg-0">
+                    <h2 class="col-7">Your Cart</h2>
+                    <p class="col-5  text-end">
+                        <button class="btn border fw-bold p-lg-3">KEEP SHOPPING</button>
+                    </p>
+                </div>
+                <div class="table-responsive carttabel">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td class="item">item</td>
+                                <td class="price">price</td>
+                                <td class="text-center quantity1">quantity</td>
+                                <td class="text-center total">total</td>
+                                <td></td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold"><img src="cartimg/cartimg2.jpg" style="width:150px;height:90px;"
+                                        class="me-3" alt="">Nest
+                                    thermostst</td>
+                                <td class="pt-3">
+                                    <p class="fw-bold mt-4">$249.00</p>
+                                </td>
+                                <td class="text-center">
+                                    <div class="cart-item mt-4">
+                                        <div class="quantity-controls pt-1">
+                                            <button class="decrement">
+                                                <p class=" border">-</p>
+                                            </button>
+                                            <input type="text" class="quantity " style="width:32px;" value="1" readonly>
+                                            <button class="increment">
+                                                <p class="px-2 border">+</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center pt-4">
+                                    <p class="fw-bold pt-2 text-success">$249.00 </p>
+                                </td>
+                                <td><button
+                                    class="btn-close btnremove mt-4 border"></button></td>
+                            </tr>
+                            <!----------->
+                            <tr>
+                                <td class="fw-bold"><img src="image/Layer 416.png" style="width:150px;height:90px;"
+                                        class="me-3" alt="">Nest
+                                    thermostst</td>
+                                <td class="pt-3">
+                                    <p class="fw-bold mt-4">$249.00</p>
+                                </td>
+                                <td class="text-center">
+                                    <div class="cart-item mt-4">
+                                        <div class="quantity-controls pt-1">
+                                            <button class="decrement">
+                                                <p class=" border">-</p>
+                                            </button>
+                                            <input type="text" class="quantity " style="width:32px;" value="1" readonly>
+                                            <button class="increment">
+                                                <p class="px-2 border">+</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center pt-4">
+                                    <p class="fw-bold pt-2 text-success">$249.00</p>
+                                </td>
+                                <td><button
+                                    class="btn-close btnremove mt-4 border"></button></td>
+                            </tr>
+                            <!--------------->
+                            <tr>
+                                <td class="fw-bold"><img src="image/1dhinesh.jpg" style="width:150px;height:90px;"
+                                        class="me-3" alt="">Nest
+                                    thermostst</td>
+                                <td class="pt-3">
+                                    <p class="fw-bold mt-4">$249.00</p>
+                                </td>
+                                <td class="text-center">
+                                    <div class="cart-item mt-4">
+                                        <div class="quantity-controls pt-1">
+                                            <button class="decrement">
+                                                <p class=" border">-</p>
+                                            </button>
+                                            <input type="text" class="quantity " style="width:32px;" value="1" readonly>
+                                            <button class="increment">
+                                                <p class="px-2 border">+</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center pt-4">
+                                    <p class="fw-bold pt-2 text-success">$249.00</p>
+                                </td>
+                                <td><button
+                                    class="btn-close btnremove mt-4 border"></button></td>
+                            </tr>
+                            <!------------->
+                            <tr>
+                                <td class="fw-bold"><img src="cartimg/cartimg5.jpg" style="width:150px;height:90px;"
+                                        class="me-3" alt="">Nest
+                                    thermostst</td>
+                                <td class="pt-3">
+                                    <p class="fw-bold mt-4">$249.00</p>
+                                </td>
+                                <td class="text-center">
+                                    <div class="cart-item mt-4">
+                                        <div class="quantity-controls pt-1">
+                                            <button class="decrement">
+                                                <p class=" border">-</p>
+                                            </button>
+                                            <input type="text" class="quantity " style="width:32px;" value="1" readonly>
+                                            <button class="increment">
+                                                <p class="px-2 border">+</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center pt-4">
+                                    <p class="fw-bold pt-2 text-success">$249.00</p>
+                                </td>
+                                <td><button
+                                    class="btn-close btnremove mt-4 border"></button></td>
+                            </tr>
+
+                            <!------------------------------------->
+                            <tr>
+                                <td class="fw-bold"><img src="cartimg/cartimg6.jpg" style="width:150px;height:90px;"
+                                        class="me-3" alt="">Nest
+                                    thermostst</td>
+                                <td class="pt-3">
+                                    <p class="fw-bold mt-4">$249.00</p>
+                                </td>
+                                <td class="text-center">
+                                    <div class="cart-item mt-4">
+                                        <div class="quantity-controls pt-1">
+                                            <button class="decrement">
+                                                <p class=" border">-</p>
+                                            </button>
+                                            <input type="text" class="quantity " style="width:32px;" value="1" readonly>
+                                            <button class="increment">
+                                                <p class="px-2 border">+</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center pt-4">
+                                    <p class="fw-bold pt-2 text-success">$249.00 </p>
+                                </td>
+                                <td><button
+                                    class="btn-close btnremove mt-4 border"></button></td>
+                            </tr>
+                            <!----------------------------------->
+                            <tr>
+                                <td class="fw-bold"><img src="image/foo1.jpeg" style="width:150px;" class="me-3"
+                                        alt="">Nest
+                                    thermostst</td>
+                                <td class="pt-3">
+                                    <p class="fw-bold mt-4">$249.00</p>
+                                </td>
+                                <td class="text-center">
+                                    <div class="cart-item mt-4">
+                                        <div class="quantity-controls pt-1">
+                                            <button class="decrement">
+                                                <p class=" border">-</p>
+                                            </button>
+                                            <input type="text" class="quantity " style="width:32px;" value="1" readonly>
+                                            <button class="increment">
+                                                <p class="px-2 border">+</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center pt-4">
+                                    <p class="fw-bold pt-2 text-success">$249.00</p>
+                                </td>
+                                <td><button
+                                    class="btn-close btnremove mt-4 border"></button></td>
+                            </tr>
+                            <!-------------------------->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-4 col-12 px-4 ps-lg-5 pe-lg-5">
+                <div class="p-3 ps-lg-4 me-lg-5 Summaryheight">
+                    <h2>Summary</h2>
+                    <div class="row">
+                        <p class="col">Item(6)</p>
+                        <p class="col">$1.025.00</p>
+                    </div>
+
+                    <p class="mt-2">Free 2-Day Shipping!</p>
+             <form action="contuct.html">
+                    <button type="submit" class="btn mt-5" style="background-color:#73BC62;color:white">PROCEED TO CHECKOUT</button>
+                </div>
+            </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------------fotter---------------->
+    <div class="container"style="background-color:white">
+        <div class="row mt-5 justify-content-between foot">
+            <div class="col-lg-3 col-12 mt-5">
+                <img src="image/logo1.png" alt="">
+                <div class="mt-4">
+                    Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus neque, vitae finibus erat
+                    odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui accumsan id. Cras non imperdiet
+                    metus. Sed nec turpis nec.
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 mt-5">
+                <div class="row mt-3">
+                    <div class="col-lg-6 col-12 text-uppercase text-center mt-3">
+                        <h5 class="fw-bold">Sign up for our Newsletter !</h5>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" Placeholder="hello@psdfreebies.com">
+                            <span class="input-group-text text-light " style="background-color:#DB3838">submit</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <h6 class="text-uppercase">information</h6>
+                        <ul class="mt-4">
+                            <li> Careers</li>
+                            <li> Investor Relations</li>
+                            <li> Press Releases</li>
+                            <li>Shop with Points</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <h6 class="text-uppercase">customer care</h6>
+                        <ul class="mt-4">
+                            <li> Returns </li>
+                            <li>shipping Info</li>
+                            <li>Gift Cards</li>
+                            <li> Size Guide</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <h6 class="text-uppercase">Store Information</h6>
+                        <div class="d-flex row mt-4">
+                            <p class="bi bi-geo-alt-fill col-1"></p>
+                            <p class="col-10">address: Lorem ipsum dolor sit amet,
+                                Onsectetuer adipiscing elit.</p>
+                        </div>
+
+                        <div class="d-flex row">
+                            <p class="bi bi-envelope-fill col-1"></p>
+                            <p class="col-10">email: demo@posthemes.com</p>
+                        </div>
+
+                        <div class="d-flex row">
+                            <p class="bi bi-telephone-fill col-1"></p>
+                            <p class="col-10">phone: 0987.654.321.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mt-5 mb-5">
+            <hr>
+            <p class="mt-4">© 2015 Psdfreebies. All Rights Reserve</p>
+        </div>
+    </div>
+
+
+    <script src="majorscript.js"></script>
+</body>
+
+</html>

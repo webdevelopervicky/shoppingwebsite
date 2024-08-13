@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--java script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image" href="image/cart4.svg">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>shopping</title>
+</head>
+
+<body>
+
+    <div class="container-fluid g-0 position-relative">
+
+        <!--first offer-->
+<!----menu bar  button-->
+        <button class="navbar-toggler navtogel" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1">
+            <i class="bi bi-list text-dark" style="font-size:55px"></i>
+        </button>
+<!---------------------->
+        <header>
+            <nav class="navbar g-0 pb-0 pt-0 navbar-expand-md ps-5 pe-3 border-bottom position-relative top">
+<!--------offer cart button-------------->
+                <button class="navbar-toggler position-absolute offer1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#demo">
+                    <i class="bi bi-cart-fill me-1"></i>
+                    <p><b>offers</b></p>
+                </button>
+<!------------------------>
+                <div class="offcanvas offcanvas-top text-white" id="demo">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Offers</h1>
+                        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                    </div>
+    
+                    <div class="offcanvas-body text-uppercase fw-bold py-0 topoff">
+                        <ul class="navbar-nav py-0 pt-0" style="--bs-nav-link-padding-y: 0rem;">
+                            <li class="nav-item px-lg-5"><a href="" class="nav-link ms-lg-5 ms-1">
+                                    <p class="mt-3"><i class="bi bi-cart-fill me-1"></i>Free shipping ON all order</p>
+                                </a></li>
+                            <li class="nav-item px-lg-5 border-end border-start "><a href="" class="nav-link">
+                                    <p class="mt-3"><i class="bi bi-cash-stack me-1"></i>100% MONEY BACK GUARANTEE</p>
+                                </a></li>
+                            <li class="nav-item ps-lg-3"><a href="" class="nav-link ms-lg-5 ms-1">
+                                    <p class="mt-3"><i class="bi bi-clock-fill me-1"></i>ONLINE SUPPORT 24/7</p>
+                                </a></li>
+                        </ul>
+    
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+<!---------logo section------------------>
+        <div class="row justify-content-center ms-lg-5 ps-lg-3  position-relative g-0">
+            <div class="col-lg-2 col-5 ms-lg-5 ms-1 position-relative">
+                <div class="logoimg position-absolute p-3 px-5 pb-4">
+                    <img src="image/logo1.png" width="150px" height="80px" class="" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-10 mt-5 mt-lg-0 pt-5 pt-lg-0">
+                <div class="mt-lg-3 mt-3 ms-lg-2 pt-3 px-lg-3">
+                    <div class="input-group drop">
+                        <input type="search" class="form-control p-2" Placeholder="search">
+                        <select class="form-select">
+                            <option class="mt-5" selected>All Catogery</option>
+                            <option value="1">Catogory One</option>
+                            <option value="2">Catogory Two</option>
+                            <option value="3">Catogory Three</option>
+                            <option value="4">Catogory four</option>
+                            <option value="5">Catogory five</option>
+                            <option value="6">Catogory six</option>
+                        </select>
+                        <span class="input-group-text bg-danger p-3 px-4"><i
+                                class="bi bi-search text-light fw-bold"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-10 mt-lg-5 mt-4 ps-4 ms-5 ms-lg-2">
+                <div class=" topicon">
+                    <i class="bi bi-facebook rounded-circle"></i>
+                    <i class="bi bi-twitter rounded-circle"></i>
+                    <i class="bi bi-instagram rounded-circle"></i>
+                    <i class="bi bi-youtube rounded-circle"></i>
+                </div>
+            </div>
+        </div>
+<!----------------carousel section------------------>
+        <div class="row g-0 mt-4 g-0">
+            <div class="col-12 caro">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-inner">
+<!-----------------------------navbar menu----------------------------->
+                        <nav class="navbar navbar-expand-md ps-5 py-0 pe-3">
+                            <div class="offcanvas offcanvas-end" id="demo1">
+                                <div class="offcanvas-header">
+                                    <h1 class="offcanvas-title"></h1>
+                                    <button type="button" class="btn-close bg-light"
+                                        data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <div class="d-flex justify-content-center d-md-none">
+                                    <div class=""><img src="image/logo1.png" alt=""></div>
+                                </div>
+
+
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav text-uppercase p-0 navmenu">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link ms-lg-5 ms-1 text-light pt-4">Home</a>
+                                        </li>
+                                        <li class="nav-item"><a href=""
+                                                class="nav-link ms-lg-5 ms-1 text-light pt-4">Shop</a></li>
+                                        <li class="nav-item"><a href=""
+                                                class="nav-link ms-lg-5 ms-1 text-light pt-4">Features </a></li>
+                                        <li class="nav-item"><a href=""
+                                                class="nav-link pt-4  ms-lg-5 ms-1 text-light">mega
+                                                group </a></li>
+                                        <li class="nav-item"><a href=""
+                                                class="nav-link ms-lg-5 ms-1 text-light pt-4">About</a></li>
+                                        <li class="nav-item"><a href=""
+                                                class="nav-link ms-lg-5 ms-1 text-light pt-4">Blog</a></li>
+                                        <li class="nav-item"><a href=""
+                                                class="nav-link ms-lg-5 ms-1 text-light pt-4">Contact</a></li>
+                                        <li class="nav-item  ms-4"><a href="cart.html"
+                                                class="nav-link ms-lg-5 p-4 ms-1 text-light bg-danger"><i
+                                                    class="bi bi-cart-fill me-1 py-4"></i>Shopping Cart (0)</a></li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </nav>
+     <!-------------------banner------------------->                  
+                        <div class="carousel-item active position-relative">
+                            <img src="image/bg1.png" class="d-block w-100" height="550px" alt="..."
+                                style="opacity: 0.678;">
+                            <div class="carousel-caption position-absolute d-md-block text-uppercase g-0">
+                                <h4 class="fw-bold">New!</h4>
+                                <h1 class="fw-bold">collection 2016</h1>
+                                <h3 class="fw-bold"><i>for</i></h3>
+                                <h2 class="fw-bold ">Men & women</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/bg1.png" class="d-block w-100 " height="550px" alt="..."
+                                style="opacity: 0.678;">
+                            <div class="carousel-caption position-absolute d-md-block text-uppercase gg-0">
+                                <h4 class="fw-bold">New!</h4>
+                                <h1 class="fw-bold">collection 2016</h1>
+                                <h3 class="fw-bold"><i>for</i></h3>
+                                <h2 class="fw-bold ">Men & women</h2>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/bg1.png" class="d-block w-100" height="550px" alt="..."
+                                style="opacity: 0.678;">
+                            <div class="carousel-caption position-absolute d-md-block text-uppercase g-0">
+                                <h4 class="fw-bold">New!</h4>
+                                <h1 class="fw-bold">collection 2016</h1>
+                                <h3 class="fw-bold"><i>for</i></h3>
+                                <h2 class="fw-bold ">Men & women</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------second navigatoin sales page--------------------------->
+    <div class="container g-0">
+        <div class="row navbar colm d-none d-lg-block g-0">
+            <ul class="nav">
+                <li class="nav-item ps-2"><a href="" class="nav-link ps-0">Go quickly to <i
+                            class="bi bi-arrow-right-circle-fill"></i> Women</a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4"> Men </a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4">Accessories</a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4">Fashion </a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4">Features </a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4">Clothings </a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4"> Bags and Wallets</a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4">Fragrances</a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4 pe-0"> Caps & Hats</a></li>
+            </ul>
+        </div>
+
+        <div class="row justify-content-between mt-3 imgsize">
+
+            <div class="col-lg-4 col-10 ps-lg-0 ms-5 ms-lg-0 px-4 cardimg22">
+                <div class="card img-fluid bg-dark">
+                    <img src="image/box1.png" class="card-img-top" alt="">
+                    <div class="card-img-overlay mt-5">
+                        <h2 class="card-title text-light text-center text-uppercase mt-4">clothes</h2>
+                        <div class="p-2 clickh mt-5">
+                            <h4>Click here</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 col-lg-4 ps-lg-0 px-4 ms-5 ms-lg-0 mt-3 mt-lg-0 cardimg22">
+                <div class="card img-fluid bg-dark">
+                    <img src="image/box2.png" class="card-img-top" alt="">
+                    <div class="card-img-overlay mt-5">
+                        <h2 class="card-title text-light text-center text-uppercase mt-4">Footwear</h2>
+                        <div class="p-2 clickh mt-5">
+                            <h4>Click here</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-10 ps-lg-0 px-4 ms-5 ms-lg-0 mt-3 mt-lg-0 cardimg22">
+                <div class="card img-fluid position-relative bg-dark justify-content-center">
+                    <img src="image/box3w.jpeg" class="card-img-top" height="336px" width="400px"
+                        style="opacity: 0.678;" alt="">
+                    <div class="card-img-overlay mt-5">
+                        <h2 class="card-title text-light text-center text-uppercase mt-4">hAND bAGS</h2>
+                        <div class=" p-2 clickh text-center mt-5">
+                            <h4>Click here</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------------mens row----------------------------->
+        <div class="row men pt-4">
+            <div class="col-6 col-lg-10 ps-2">
+                <h3 class="mt-5">MEN</h3>
+                <p></p>
+            </div>
+
+            <div class="col-6 col-lg-2 text-end">
+                <h3 class="mt-5 p-1">
+                    <button class="swiper-buttonnext"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                    <button class="swiper-buttonprev"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                </h3>
+
+            </div>
+        </div>
+        <div class="row justify-content-between  ms-0 box6">
+            <div class="col-lg-6 col-12 pe-lg-4 pe-0 ps-0">
+                <div class="card img-fluid position-relative bg-dark justify-content-center">
+                    <img src="image/men.png" class="card-img-top" style="opacity: 0.678;" alt="">
+                    <div class="card-img-overlay mt-lg-5 pt-5">
+                        <h2 class="card-title text-light text-center text-uppercase mt-5 fw-bold">for men</h2>
+                        <div class="p-lg-2 p-1 clickh mt-5">
+                            <h4>More</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-10 mt-4 mt-lg-0 ms-4 ms-lg-0">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card" style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                <img class="card-img-top" src="image/carouselimg1.jpeg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body">
+                                    <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                    <hr>
+                                    <h4 class="card-text ps-lg-3 ms-lg-0 text-center text-lg-start">£ 61.1</h4>
+                <!--------------star rating---------------->
+                                    <div class="row">
+                                        <div class="col-lg-5 col-12 ps-5 ms-5 ps-lg-0 ms-lg-0">
+                                            <div class="star-rating ps-3">
+                                                <input type="radio" id="star5" name="rating" value="5"><label
+                                                    for="star5" title="5 stars">★</label>
+                                                <input type="radio" id="star4" name="rating" value="4"><label
+                                                    for="star4" title="4 stars">★</label>
+                                                <input type="radio" id="star3" name="rating" value="3"><label
+                                                    for="star3" title="3 stars">★</label>
+                                                <input type="radio" id="star2" name="rating" value="2"><label
+                                                    for="star2" title="2 stars">★</label>
+                                                <input type="radio" id="star1" name="rating" value="1"><label
+                                                    for="star1" title="1 star">★</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-12 px-0 mt-3 mt-lg-0">
+                                            <div class="text-center ms-">
+                                                <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="card" style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                <img class="card-img-top" src="image/carouselimg2.jpeg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body">
+                                    <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                    <hr>
+                                    <h4 class="card-text ps-2 text-center text-lg-start">£ 61.1</h4>
+                        <!------------------------star rating-------------------->
+                                    <div class="row">
+                                        <div class="col-lg-5 col-12">
+                                            <div class="star-rating ps-5 ms-5 ps-lg-2 ms-lg-0 ">
+                                                <input type="radio" id="star52" name="rating" value="5"><label
+                                                    for="star52" title="5 stars">★</label>
+                                                <input type="radio" id="star42" name="rating" value="4"><label
+                                                    for="star42" title="4 stars">★</label>
+                                                <input type="radio" id="star32" name="rating" value="3"><label
+                                                    for="star32" title="3 stars">★</label>
+                                                <input type="radio" id="star22" name="rating" value="2"><label
+                                                    for="star22" title="2 stars">★</label>
+                                                <input type="radio" id="star12" name="rating" value="1"><label
+                                                    for="star12" title="1 star">★</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-12 px-0">
+                                            <div class="text-center ms-2">
+                                                <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                <img class="card-img-top" src="image/carouselimg2.jpeg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body">
+                                    <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                    <hr>
+                                    <h4 class="card-text ps-2 text-center text-lg-start">£ 61.1</h4>
+                                    <!--star rating-->
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="star-rating ps-2 ps-5 ms-5 ps-lg-2 ms-lg-0">
+                                                <input type="radio" id="star5" name="rating" value="5"><label
+                                                    for="star5" title="5 stars">★</label>
+                                                <input type="radio" id="star4" name="rating" value="4"><label
+                                                    for="star4" title="4 stars">★</label>
+                                                <input type="radio" id="star3" name="rating" value="3"><label
+                                                    for="star3" title="3 stars">★</label>
+                                                <input type="radio" id="star2" name="rating" value="2"><label
+                                                    for="star2" title="2 stars">★</label>
+                                                <input type="radio" id="star1" name="rating" value="1"><label
+                                                    for="star1" title="1 star">★</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 px-0">
+                                            <div class="text-center ms-2">
+                                                <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                <img class="card-img-top" src="image/carouselimg2.jpeg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body">
+                                    <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                    <hr>
+                                    <h4 class="card-text ps-2 text-center text-lg-start">£ 61.1</h4>
+                                    <!--star rating-->
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="star-rating ps-lg-2 ms-lg-0 ms-5 ps-5 ">
+                                                <input type="radio" id="star5" name="rating" value="5"><label
+                                                    for="star5" title="5 stars">★</label>
+                                                <input type="radio" id="star4" name="rating" value="4"><label
+                                                    for="star4" title="4 stars">★</label>
+                                                <input type="radio" id="star3" name="rating" value="3"><label
+                                                    for="star3" title="3 stars">★</label>
+                                                <input type="radio" id="star2" name="rating" value="2"><label
+                                                    for="star2" title="2 stars">★</label>
+                                                <input type="radio" id="star1" name="rating" value="1"><label
+                                                    for="star1" title="1 star">★</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 px-0">
+                                            <div class="text-center ms-2">
+                                                <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    
+                </div>
+            </div>
+<!---------------------------Womens section------------------------------------>
+            <div class="row men pt-4">
+                <div class="col-6 col-lg-10 ps-2">
+                    <h3 class="mt-5">WOMEN</h3>
+                    <p></p>
+                </div>
+    
+                <div class="col-6 col-lg-2 text-end">
+                    <h3 class="mt-5 p-1">
+                        <button class="swiper-buttonnext1"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                        <button class="swiper-buttonprev1"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                    </h3>
+    
+                </div>
+            </div>
+            <div class="row justify-content-between box6 g-0 mt-5 mt-lg-0">
+
+                <div class="col-lg-6 col-10 pe-lg-4 pe-3 ms-3 ms-lg-0">
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card"
+                                    style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                    <img class="card-img-top" src="image/Layer 418.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h5 class="card-title ps-2 pt-2 text-center text-lg-start">printed chiffon Dress</h5>
+                                        <hr>
+                                        <h4 class="card-text ps-2 text-center text-lg-start">£ 61.1</h4>
+                                        <!--star rating-->
+                                        <div class="row">
+                                            <div class="col-5 ms-5 ps-5 ps-lg-0 ms-lg-0">
+                                                <div class="star-rating ps-3">
+                                                    <input type="radio" id="star5w1" name="rating" value="5"><label
+                                                        for="star5w1" title="5 stars">★</label>
+                                                    <input type="radio" id="star4w1" name="rating" value="4"><label
+                                                        for="star4w1" title="4 stars">★</label>
+                                                    <input type="radio" id="star3w1" name="rating" value="3"><label
+                                                        for="star3w1" title="3 stars">★</label>
+                                                    <input type="radio" id="star2w1" name="rating" value="2"><label
+                                                        for="star2w1" title="2 stars">★</label>
+                                                    <input type="radio" id="star1w1" name="rating" value="1"><label
+                                                        for="star1w1" title="1 star">★</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-12  px-0">
+                                                <div class="text-center ms-2">
+                                                    <h6 class="clickh1   p-2 px-0">Add to cart</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+
+                                <div class="card"
+                                    style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                    <img class="card-img-top" src="image/Layer 417.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h5 class="card-title ps-2 pt-2 text-center text-lg-start">printed chiffon Dress</h5>
+                                        <hr>
+                                        <h4 class="card-text ps-2 text-center text-lg-start">£ 61.1</h4>
+                                        <!--star rating-->
+                                        <div class="row">
+                                            <div class="col-5 ms-5 ps-5 ms-lg-0 ps-lg-0">
+                                                <div class="star-rating ps-2">
+                                                    <input type="radio" id="star5w2" name="rating" value="5"><label
+                                                        for="star5w2" title="5 stars">★</label>
+                                                    <input type="radio" id="star4w2" name="rating" value="4"><label
+                                                        for="star4w2" title="4 stars">★</label>
+                                                    <input type="radio" id="star3w2" name="rating" value="3"><label
+                                                        for="star3w2" title="3 stars">★</label>
+                                                    <input type="radio" id="star2w2" name="rating" value="2"><label
+                                                        for="star2w2" title="2 stars">★</label>
+                                                    <input type="radio" id="star1w2" name="rating" value="1"><label
+                                                        for="star1w2" title="1 star">★</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-12 px-0">
+                                                <div class="text-center ms-2">
+                                                    <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card"
+                                    style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                    <img class="card-img-top" src="image/Layer 417.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h5 class="card-title ps-2 pt-2 text-center text-lg-start">printed chiffon Dress</h5>
+                                        <hr>
+                                        <h4 class="card-text ps-2 text-center text-lg-start">£ 61.1</h4>
+                                        <!--star rating-->
+                                        <div class="row">
+                                            <div class="col-5 ms-5 ps-5 ps-lg-0 ms-lg-5">
+                                                <div class="star-rating ps-2">
+                                                    <input type="radio" id="star5" name="rating" value="5"><label
+                                                        for="star5" title="5 stars">★</label>
+                                                    <input type="radio" id="star4" name="rating" value="4"><label
+                                                        for="star4" title="4 stars">★</label>
+                                                    <input type="radio" id="star3" name="rating" value="3"><label
+                                                        for="star3" title="3 stars">★</label>
+                                                    <input type="radio" id="star2" name="rating" value="2"><label
+                                                        for="star2" title="2 stars">★</label>
+                                                    <input type="radio" id="star1" name="rating" value="1"><label
+                                                        for="star1" title="1 star">★</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-12 px-0">
+                                                <div class="text-center ms-2">
+                                                    <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card"
+                                    style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                    <img class="card-img-top" src="image/Layer 418.png" alt="Card image"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h5 class="card-title ps-2 pt-2 text-center text-lg-start">printed chiffon Dress</h5>
+                                        <hr>
+                                        <h4 class="card-text ps-2 text-center text-lg-start">£ 61.1</h4>
+                                        <!--star rating-->
+                                        <div class="row">
+                                            <div class="col-5 ms-5 ps-5 ms-lg-0 ps-lg-0">
+                                                <div class="star-rating ps-2">
+                                                    <input type="radio" id="star5" name="rating" value="5"><label
+                                                        for="star5" title="5 stars">★</label>
+                                                    <input type="radio" id="star4" name="rating" value="4"><label
+                                                        for="star4" title="4 stars">★</label>
+                                                    <input type="radio" id="star3" name="rating" value="3"><label
+                                                        for="star3" title="3 stars">★</label>
+                                                    <input type="radio" id="star2" name="rating" value="2"><label
+                                                        for="star2" title="2 stars">★</label>
+                                                    <input type="radio" id="star1" name="rating" value="1"><label
+                                                        for="star1" title="1 star">★</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-7 px-0">
+                                                <div class="text-center ms-2">
+                                                    <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 ps-lg-4 mt-5 mt-lg-0">
+                    <div class="card img-fluid  bg-dark justify-content-center mt-5 mt-lg-0">
+                        <img src="image/Layer 416.png" class="card-img-top" style="opacity: 0.678;" alt="">
+                        <div class="card-img-overlay mt-5 pt-5">
+                            <h2 class="card-title text-light text-center text-uppercase mt-5 fw-bold"> FOR Women</h2>
+                            <div class=" p-2 clickh text-center mt-5">
+                                <h4>More</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    <!------------------------------big swibbers------------------------>
+
+        <div class="row men pt-4 text-uppercase g-0 ps-lg-0 ps-3">
+            <div class="col-lg-3">
+                <h3 class="mt-5">New arrivals</h3>
+                <p></p>
+            </div>
+
+            <div class="col-lg-3">
+                <h3 class="mt-lg-5" style="opacity:0.4;">Best Sellers</h3>
+                <p style="opacity:0.4"></p>
+            </div>
+
+            <div class="col-lg-3">
+                <h3 class="mt-lg-5" style="opacity:0.4">Popular</h3>
+                <p style="opacity:0.4"></p>
+            </div>
+
+            <div class="col-3 text-end buttonposition">
+                <h3 class="mt-5">
+                    <button class="swiper-button-next2"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                    <button class="swiper-button-prev2"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                </h3>
+
+            </div>
+
+        </div>
+        <div class="row justify-content-between box6 g-0">
+
+            <div class="col-12 ps-lg-0 ps-5">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card" style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                <img class="card-img-top" src="image/men1.jpg" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                    <hr>
+                                    <h4 class="card-text ps-2">£ 61.1</h4>
+                                    <!--star rating-->
+                                    <div class="row">
+                                        <div class="col-lg-5 col-12">
+                                            <div class="star-rating ps-2">
+                                                <input type="radio" id="star5b1" name="rating" value="5"><label
+                                                    for="star5b1" title="5 stars">★</label>
+                                                <input type="radio" id="star4b1" name="rating" value="4"><label
+                                                    for="star4b1" title="4 stars">★</label>
+                                                <input type="radio" id="star3b1" name="rating" value="3"><label
+                                                    for="star3b1" title="3 stars">★</label>
+                                                <input type="radio" id="star2b1" name="rating" value="2"><label
+                                                    for="star2b1" title="2 stars">★</label>
+                                                <input type="radio" id="star1b1" name="rating" value="1"><label
+                                                    for="star1b1" title="1 star">★</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-12 px-0">
+                                            <div class="text-center ms-2">
+                                                <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="card" style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                <img class="card-img-top" src="image/Layer 417.png" height="400px" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                    <hr>
+                                    <h4 class="card-text ps-2">£ 61.1</h4>
+                                    <!--star rating-->
+                                    <div class="row">
+                                        <div class="col-lg-5 col-12">
+                                            <div class="star-rating ps-2">
+                                                <input type="radio" id="star5b2" name="rating" value="5"><label
+                                                    for="star5b2" title="5 stars">★</label>
+                                                <input type="radio" id="star4b2" name="rating" value="4"><label
+                                                    for="star4b2" title="4 stars">★</label>
+                                                <input type="radio" id="star3b2" name="rating" value="3"><label
+                                                    for="star3b2" title="3 stars">★</label>
+                                                <input type="radio" id="star2b2" name="rating" value="2"><label
+                                                    for="star2b2" title="2 stars">★</label>
+                                                <input type="radio" id="star1b2" name="rating" value="1"><label
+                                                    for="star1b2" title="1 star">★</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-12 px-0">
+                                            <div class="text-center ms-2">
+                                                <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                <img class="card-img-top" src="image/Layer 417.png" height="400px" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                    <hr>
+                                    <h4 class="card-text ps-2">£ 61.1</h4>
+                                    <!--star rating-->
+                                    <div class="row">
+                                        <div class="col-lg-5 col-12">
+                                            <div class="star-rating ps-2">
+                                                <input type="radio" id="star5b3" name="rating" value="5"><label
+                                                    for="star5b3" title="5 stars">★</label>
+                                                <input type="radio" id="star4b3" name="rating" value="4"><label
+                                                    for="star4b3" title="4 stars">★</label>
+                                                <input type="radio" id="star3b3" name="rating" value="3"><label
+                                                    for="star3b3" title="3 stars">★</label>
+                                                <input type="radio" id="star2b3" name="rating" value="2"><label
+                                                    for="starb32" title="2 stars">★</label>
+                                                <input type="radio" id="star1b3" name="rating" value="1"><label
+                                                    for="star1b3" title="1 star">★</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-12 px-0">
+                                            <div class="text-center ms-2">
+                                                <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card" style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                                <img class="card-img-top" src="image/Layer 418.png" height="400px" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                    <hr>
+                                    <h4 class="card-text ps-2">£ 61.1</h4>
+                                    <!--star rating-->
+                                    <div class="row">
+                                        <div class="col-lg-5 col-12 ">
+                                            <div class="star-rating ps-2">
+                                                <input type="radio" id="star5b4" name="rating" value="5"><label
+                                                    for="star5b4" title="5 stars">★</label>
+                                                <input type="radio" id="star4b4" name="rating" value="4"><label
+                                                    for="star4b4" title="4 stars">★</label>
+                                                <input type="radio" id="star3b4" name="rating" value="3"><label
+                                                    for="star3b4" title="3 stars">★</label>
+                                                <input type="radio" id="star2b4" name="rating" value="2"><label
+                                                    for="star2b4" title="2 stars">★</label>
+                                                <input type="radio" id="star1b4" name="rating" value="1"><label
+                                                    for="star1b4" title="1 star">★</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-12 px-0">
+                                            <div class="text-center ms-2">
+                                                <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card"
+                            style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                            <img class="card-img-top" src="image/Layer 417.png" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                <hr>
+                                <h4 class="card-text ps-2">£ 61.1</h4>
+                                <!--star rating-->
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="star-rating ps-2">
+                                            <input type="radio" id="star5" name="rating" value="5"><label
+                                                for="star5" title="5 stars">★</label>
+                                            <input type="radio" id="star4" name="rating" value="4"><label
+                                                for="star4" title="4 stars">★</label>
+                                            <input type="radio" id="star3" name="rating" value="3"><label
+                                                for="star3" title="3 stars">★</label>
+                                            <input type="radio" id="star2" name="rating" value="2"><label
+                                                for="star2" title="2 stars">★</label>
+                                            <input type="radio" id="star1" name="rating" value="1"><label
+                                                for="star1" title="1 star">★</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-12 px-0">
+                                        <div class="text-center ms-2">
+                                            <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        </div>
+                        <div class="swiper-slide">  <div class="card"
+                            style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                            <img class="card-img-top" src="image/4dhinesh.jfif" height="400px" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                <hr>
+                                <h4 class="card-text ps-2">£ 61.1</h4>
+                                <!--star rating-->
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="star-rating ps-2">
+                                            <input type="radio" id="star5" name="rating" value="5"><label
+                                                for="star5" title="5 stars">★</label>
+                                            <input type="radio" id="star4" name="rating" value="4"><label
+                                                for="star4" title="4 stars">★</label>
+                                            <input type="radio" id="star3" name="rating" value="3"><label
+                                                for="star3" title="3 stars">★</label>
+                                            <input type="radio" id="star2" name="rating" value="2"><label
+                                                for="star2" title="2 stars">★</label>
+                                            <input type="radio" id="star1" name="rating" value="1"><label
+                                                for="star1" title="1 star">★</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-12 px-0">
+                                        <div class="text-center ms-2">
+                                            <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="swiper-slide">
+                            <div class="card"
+                            style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                            <img class="card-img-top" src="image/3dhinesh.jfif" height="400px" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                <hr>
+                                <h4 class="card-text ps-2">£ 61.1</h4>
+                                <!--star rating-->
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="star-rating ps-2">
+                                            <input type="radio" id="star5" name="rating" value="5"><label
+                                                for="star5" title="5 stars">★</label>
+                                            <input type="radio" id="star4" name="rating" value="4"><label
+                                                for="star4" title="4 stars">★</label>
+                                            <input type="radio" id="star3" name="rating" value="3"><label
+                                                for="star3" title="3 stars">★</label>
+                                            <input type="radio" id="star2" name="rating" value="2"><label
+                                                for="star2" title="2 stars">★</label>
+                                            <input type="radio" id="star1" name="rating" value="1"><label
+                                                for="star1" title="1 star">★</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-12 px-0">
+                                        <div class="text-center ms-2">
+                                            <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">  <div class="card"
+                            style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                            <img class="card-img-top" src="image/2dhinesh.jfif" height="400px" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                <hr>
+                                <h4 class="card-text ps-2">£ 61.1</h4>
+                                <!--star rating-->
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="star-rating ps-2">
+                                            <input type="radio" id="star5" name="rating" value="5"><label
+                                                for="star5" title="5 stars">★</label>
+                                            <input type="radio" id="star4" name="rating" value="4"><label
+                                                for="star4" title="4 stars">★</label>
+                                            <input type="radio" id="star3" name="rating" value="3"><label
+                                                for="star3" title="3 stars">★</label>
+                                            <input type="radio" id="star2" name="rating" value="2"><label
+                                                for="star2" title="2 stars">★</label>
+                                            <input type="radio" id="star1" name="rating" value="1"><label
+                                                for="star1" title="1 star">★</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-12 px-0">
+                                        <div class="text-center ms-2">
+                                            <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="swiper-slide">  <div class="card"
+                            style="--bs-card-spacer-y:0rem;    --bs-card-spacer-x: 0rem;border:none">
+                            <img class="card-img-top" src="image/1dhinesh.jpg" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h5 class="card-title ps-2 pt-2">printed chiffon Dress</h5>
+                                <hr>
+                                <h4 class="card-text ps-2">£ 61.1</h4>
+                                <!--star rating-->
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="star-rating ps-2">
+                                            <input type="radio" id="star5" name="rating" value="5"><label
+                                                for="star5" title="5 stars">★</label>
+                                            <input type="radio" id="star4" name="rating" value="4"><label
+                                                for="star4" title="4 stars">★</label>
+                                            <input type="radio" id="star3" name="rating" value="3"><label
+                                                for="star3" title="3 stars">★</label>
+                                            <input type="radio" id="star2" name="rating" value="2"><label
+                                                for="star2" title="2 stars">★</label>
+                                            <input type="radio" id="star1" name="rating" value="1"><label
+                                                for="star1" title="1 star">★</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-12 px-0">
+                                        <div class="text-center ms-2">
+                                            <h6 class="clickh1  p-2 px-0">Add to cart</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+            
+        
+ <!-------------------------from tha blog---------------------------->
+        <div class="row mt-5 g-0">
+            <div class="row men text-uppercase mb-4">
+                <div class="col ps-3 ps-lg-0">
+                    <h3>
+                        from the blog
+                    </h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 ps-4 ps-lg-0 pe-3">
+                <div class="card" style="border:none">
+                    <img class="card-img-top" src="image/foo1.jpeg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h6 class="card-img-top fw-bold">Curabitur ligulasapien </h6>
+                        <p class="card-text">Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus
+                            neque, vitae finibus erat odio eu lacus. Curabitur </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-12 ps-3 pe-2">
+                <div class="card" style="border:none">
+                    <img class="card-img-top" src="image/foo2.jpeg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h6 class="card-img-top fw-bold">Curabitur ligulasapien </h6>
+                        <p class="card-text">Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus
+                            neque, vitae finibus erat odio eu lacus. Curabitur </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-12  ps-3 pe-2 pe-lg-0">
+                <div class="card" style="border:none">
+                    <img class="card-img-top" src="image/foo3.jpeg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h6 class="card-img-top fw-bold">Curabitur ligulasapien </h6>
+                        <p class="card-text">Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus
+                            neque, vitae finibus erat odio eu lacus. Curabitur </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!----------------fotter---------------->
+
+        <div class="row mt-5 justify-content-between foot px-3 ps-lg-0">
+            <div class="col-lg-3 col-10 mt-5">
+                <img src="image/logo1.png" alt="">
+                <div class="mt-4">
+                    Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus neque, vitae finibus erat
+                    odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui accumsan id. Cras non imperdiet
+                    metus. Sed nec turpis nec.
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 mt-5">
+                <div class="row mt-3">
+                    <div class="col-lg-6 col-12 text-uppercase text-center mt-3">
+                        <h5 class="fw-bold">Sign up for our Newsletter !</h5>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" Placeholder="hello@psdfreebies.com">
+                            <span class="input-group-text text-light " style="background-color:#DB3838">submit</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <h6 class="text-uppercase">information</h6>
+                        <ul class="mt-4">
+                            <li> Careers</li>
+                            <li> Investor Relations</li>
+                            <li> Press Releases</li>
+                            <li>Shop with Points</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <h6 class="text-uppercase">customer care</h6>
+                        <ul class="mt-4">
+                            <li> Returns </li>
+                            <li>shipping Info</li>
+                            <li>Gift Cards</li>
+                            <li> Size Guide</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <h6 class="text-uppercase">Store Information</h6>
+                        <div class="d-flex row mt-4">
+                            <p class="bi bi-geo-alt-fill col-1"></p>
+                            <p class="col-10">address: Lorem ipsum dolor sit amet,
+                                Onsectetuer adipiscing elit.</p>
+                        </div>
+
+                        <div class="d-flex row">
+                            <p class="bi bi-envelope-fill col-1"></p>
+                            <p class="col-10">email: demo@posthemes.com</p>
+                        </div>
+
+                        <div class="d-flex row">
+                            <p class="bi bi-telephone-fill col-1"></p>
+                            <p class="col-10">phone: 0987.654.321.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row text-center mt-5 mb-5">
+            <hr>
+            <p class="mt-4">© 2015 Psdfreebies. All Rights Reserve</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-buttonprev",
+                prevEl: ".swiper-buttonnext",
+                clickable: true,
+            },
+            breakpoints: {
+
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+
+                700: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+
+
+            }
+        });
+
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-buttonprev1",
+                prevEl: ".swiper-buttonnext1",
+                clickable: true,
+            },
+            breakpoints: {
+
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                700: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+
+            },
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-prev2",
+                prevEl: ".swiper-button-next2",
+                clickable: true,
+            },
+            breakpoints: {
+
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                700: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+
+            },
+        });
+    </script>
+
+    <script src="majorscript.js"></script>
+
+</body>
+
+</html>
